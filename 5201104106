@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang Cá Nhân - Trang Profile</title>
+</head>
+<body>
+
+    <!-- Thẻ <header>: Phần đầu trang -->
+    <header>
+        <h1>Trang Profile Cá Nhân</h1>
+        <!-- Thẻ <nav>: Thanh điều hướng -->
+        <nav>
+            <ul>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#skills">Kỹ năng & Sở thích</a></li>
+                <li><a href="#schedule">Thời khóa biểu</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- Thẻ <main>: Nội dung chính của trang -->
+    <main>
+
+        <!-- Phần Giới thiệu & Ảnh đại diện -->
+        <section id="about">
+            <h2>Thông Tin Cá Nhân</h2>
+            <article>
+                <!-- Thẻ <img>: Ảnh đại diện -->
+                <img src="https://via.placeholder.com/150" alt="Ảnh đại diện" width="150" height="150">
+                <h3>Họ và tên: Lâm Nhật Tùng</h3>
+                <p><strong>Giới thiệu ngắn:</strong> Xin chào! Tôi là một người yêu thích công nghệ, luôn muốn học hỏi và khám phá thêm nhiều kiến thức mới về lập trình và phát triển phần mềm.</p>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- Phần Sở thích & Kỹ năng -->
+        <section id="skills">
+            <h2>Sở Thích & Kỹ Năng</h2>
+            <article>
+                <h3>Sở thích</h3>
+                <!-- Thẻ <ul>: Danh sách không thứ tự -->
+                <ul>
+                    <li>Lập trình và tìm hiểu công nghệ mới</li>
+                    <li>Chơi game trải nghiệm và đánh giá tính năng</li>
+                    <li>Đọc sách và học ngoại ngữ</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Kỹ năng</h3>
+                <ul>
+                    <li>HTML5 / CSS3 cơ bản</li>
+                    <li>Sử dụng thành thạo Visual Studio Code</li>
+                    <li>Tiếng Anh giao tiếp & học thuật</li>
+                    <li>Giải quyết vấn đề và làm việc nhóm</li>
+                </ul>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- Phần Thời khóa biểu -->
+        <section id="schedule">
+            <h2>Bảng Thời Khóa Biểu Học Tập</h2>
+            <article>
+                <!-- Thẻ <table>: Bảng thời khóa biểu -->
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Buổi</th>
+                            <th>Thứ 2</th>
+                            <th>Thứ 3</th>
+                            <th>Thứ 4</th>
+                            <th>Thứ 5</th>
+                            <th>Thứ 6</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sáng</td>
+                            <td>Lập trình Web (HTML5)</td>
+                            <td>Tiếng Anh</td>
+                            <td>Lập trình Web (HTML5)</td>
+                            <td>Cấu trúc dữ liệu</td>
+                            <td>Tự học / Làm bài tập</td>
+                        </tr>
+                        <tr>
+                            <td>Chiều</td>
+                            <td>Toán rời rạc</td>
+                            <td>Tự học VS Code</td>
+                            <td>Toán rời rạc</td>
+                            <td>Tiếng Anh</td>
+                            <td>Hoạt động ngoại khóa</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- Phần Form liên hệ -->
+        <section id="contact">
+            <h2>Form Liên Hệ Đơn Giản</h2>
+            <article>
+                <!-- Thẻ <form>: Biểu mẫu -->
+                <form action="#" method="post">
+                    <p>
+                        <label for="name">Họ và tên:</label><br>
+                        <!-- Thẻ <input>: Ô nhập liệu -->
+                        <input type="text" id="name" name="name" placeholder="Nhập họ tên của bạn">
+                    </p>
+                    <p>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="Nhập email của bạn">
+                    </p>
+                    <p>
+                        <label for="message">Lời nhắn:</label><br>
+                        <!-- Thẻ <textarea>: Ô nhập văn bản nhiều dòng -->
+                        <textarea id="message" name="message" rows="4" cols="50" placeholder="Nhập nội dung lời nhắn..."></textarea>
+                    </p>
+                    <p>
+                        <!-- Thẻ <button>: Nút gửi -->
+                        <button type="submit">Gửi tin nhắn</button>
+                    </p>
+                </form>
+            </article>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- Thẻ <footer>: Phần chân trang -->
+    <footer>
+        <h3>Thông Tin Liên Hệ & Mạng Xã Hội</h3>
+        <p>Email: nhattung@example.com | Điện thoại: 0123 456 789</p>
+        <p>Liên kết mạng xã hội:</p>
+        <!-- Thẻ <a>: Liên kết Facebook & GitHub -->
+        <p>
+            <a href="https://facebook.com" target="_blank">Trang Facebook</a> | 
+            <a href="https://github.com" target="_blank">Trang GitHub</a>
+        </p>
+        <p>&copy; 2026 Profile cá nhân. Tất cả quyền được bảo lưu.</p>
+    </footer>
+
+</body>
+</html>

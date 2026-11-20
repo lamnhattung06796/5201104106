@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ cá</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #050e1e;
+            overflow: hidden;
+        }
+        #hoca {
+            position: fixed;
+            bottom: 0;
+            width: 98%;
+            height: 80%;
+            left: 1%;
+            background: linear-gradient(to bottom, #114357, #2193b0);
+            border: 4px solid #fff;
+            border-bottom: none;
+            border-radius: 20px 20px 0 0;
+            box-shadow: 0 0 25px rgba(0,255,255,0.3);
+            overflow: hidden;
+        }
+        .ca {
+            position: absolute;
+        }
+        #ca1 {
+            width: 140px;
+            top: 20%;
+            animation: boi_trai_phai 18s linear infinite;
+        }
+        #ca2 {
+            width: 110px;
+            top: 45%;
+            animation: boi_phai_trai 22s linear infinite;
+        }
+        #ca3 {
+            width: 80px;
+            top: 10%;
+            animation: boi_trai_phai 16s linear infinite;
+        }
+        #ca4 {
+            width: 130px;
+            top: 35%;
+            animation: boi_phai_trai 24s linear infinite;
+        }
+        .rongbien {
+            position: absolute;
+            bottom: 25px;
+            z-index: 2;
+            transform-origin: bottom center;
+            animation: du_dua 4s ease-in-out infinite alternate;
+        }
+        .soida {
+            position: absolute;
+            bottom: -5px;
+            width: 100%;
+            height: auto;
+            max-height: 70px;
+            z-index: 3;
+            display: flex;
+            justify-content: space-around;
+        }
+        .vien_soi {
+            height: 50px;
+            object-fit: contain;
+        }
+        .bongbong {
+            position: absolute;
+            bottom: -20px;
+            background-color: rgba(255, 255, 255, 0.35);
+            border-radius: 50%;
+            animation: bongbong_bay 7s infinite ease-in;
+        }
+        @keyframes boi_trai_phai {
+            0% { left: -200px; transform: scaleX(1); }
+            48% { left: calc(100% - 150px); transform: scaleX(1); }
+            50% { left: calc(100% - 150px); transform: scaleX(-1); }
+            98% { left: -200px; transform: scaleX(-1); }
+            100% { left: -200px; transform: scaleX(1); }
+        }
+        @keyframes boi_phai_trai {
+            0% { right: -200px; transform: scaleX(1); }
+            48% { right: calc(100% - 150px); transform: scaleX(1); }
+            50% { right: calc(100% - 150px); transform: scaleX(-1); }
+            98% { right: -200px; transform: scaleX(-1); }
+            100% { right: -200px; transform: scaleX(1); }
+        }
+        @keyframes du_dua {
+            0% { transform: skewX(-3deg); }
+            100% { transform: skewX(3deg); }
+        }
+        @keyframes bongbong_bay {
+            0% { transform: translateY(0) translateX(0); opacity: 1; }
+            50% { transform: translateY(-40vh) translateX(20px); }
+            100% { transform: translateY(-80vh) translateX(-20px); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div id="hoca">
+        <img src="https://rawpixel.com" class="ca" id="ca1" alt="Fish 1">
+        <img src="https://rawpixel.com" class="ca" id="ca2" alt="Fish 2">
+        <img src="https://freeiconspng.com" class="ca" id="ca3" alt="Fish 3">
+        <img src="https://freepngimg.com" class="ca" id="ca4" alt="Fish 4">
+
+        <img src="https://rawpixel.com" class="rongbien" style="left: 5%; height: 180px;" alt="Seaweed 1">
+        <img src="https://rawpixel.com" class="rongbien" style="left: 12%; height: 130px; animation-delay: -1s;" alt="Seaweed 2">
+        <img src="https://rawpixel.com" class="rongbien" style="right: 8%; height: 200px; animation-delay: -2s;" alt="Seaweed 3">
+
+        <div class="soida">
+            <img src="https://vecteezy.com" class="vien_soi" alt="Rock 1">
+            <img src="https://vecteezy.com" class="vien_soi" style="transform: scaleX(-1);" alt="Rock 2">
+        </div>
+
+        <div class="bongbong" style="left: 20%; width: 12px; height: 12px; animation-delay: 0s;"></div>
+        <div class="bongbong" style="left: 45%; width: 18px; height: 18px; animation-delay: 2s;"></div>
+        <div class="bongbong" style="left: 75%; width: 10px; height: 10px; animation-delay: 1.5s;"></div>
+        <div class="bongbong" style="left: 90%; width: 15px; height: 15px; animation-delay: 4s;"></div>
+    </div>
+</body>
+</html>
